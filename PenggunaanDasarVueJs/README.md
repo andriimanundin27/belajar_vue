@@ -24,3 +24,20 @@ var app = new Vue({
   }
 })
 ```
+
+### teks reaktif untuk menampilkan pesan ketika cursor diatas teks
+
+```
+<div id="app">
+    <span v-bind:title="message">{{ message }}</span>
+ </div>
+```
+
+```
+<div id="app">
+    <span :title="message">{{ message }}</span>
+</div>
+```
+
+`v-bind` adalah atribut direktif, biasa disingkat `v-` atau `:` (atribut khusus vue.js) atau (data binding)
+

@@ -5,17 +5,27 @@
 		<title>Vue JS</title>
 	</head>
 	<body>
-		<div id="app">
+		<!-- <div id="app">
 			{{ message }}
-		</div>
+		</div> -->
+
+		<!-- <div id="app">
+			<span v-bind:title="message">{{ message }}</span>
+	 </div> -->
+
+	 <div id="app">
+    <span v-bind:title="message">{{ message }}</span>
+	 </div>
 		<script src="https://unpkg.com/vue"></script>
 		<script>
 			var app = new Vue({
 				el: '#app',
 				data: {
-					message: 'Hello Vue!'
+					// message: 'Hello Vue!'
+					message: 'silakan arahkan cursor kearah teks ini!'
 				}
 			})
+			// app.message = 'ini andri bosque!'
 		</script>
 	</body>
 </html>
